@@ -19,6 +19,7 @@ catppuccin-cursors (I use catppuccin-mocha-dark),
 starship,
 fish,
 kitty,
+mako for notifications
 hy3 plugin for hyprland,
 MonoLisa nerd font,
 cmus and cava for music,
