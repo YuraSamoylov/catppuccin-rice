@@ -20,4 +20,6 @@ starship,
 fish,
 kitty,
 hy3 plugin for hyprland,
-MonoLisa nerd font
+MonoLisa nerd font,
+cmus and cava for music,
+ble.sh for bash autocompletions

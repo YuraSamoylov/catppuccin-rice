@@ -10,6 +10,10 @@ Also, I hope you will see all keymaps in different tools.
 Main maps princip is SUPER for Hyprland, Alt for kitty and Ctrl or Space for
 nvim.
 
+## Requirements
+
+[requirements](requirements.txt)
+
 ## Screenshots:
 
 ![screen1](ScreenShots/Hypr_dwindle.png)
