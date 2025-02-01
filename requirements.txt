@@ -22,5 +22,6 @@ kitty,
 hy3 plugin for hyprland,
 MonoLisa nerd font,
 cmus and cava for music,
+rofi-wayland and wofi for menus,
 ble.sh for bash autocompletions,
 also I use tokyo-night, catppuccin and austronaut themes for sddm
