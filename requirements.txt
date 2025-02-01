@@ -1,0 +1,23 @@
+What you need to install/change
+
+If you use non arch-based distro, change some aliases in fish. Also there are
+two versions of vim directory. .vim you need to copy in your home directory. And
+all directories in config fonder clone to .config folder or another dotfiles
+directory.
+
+So you need to install:
+
+neovim(nvim),
+vim,
+helix,
+ranger,
+vifm,
+hyprland (and all hypr ecosystem programs),
+waybar,
+swaybg,
+catppuccin-cursors (I use catppuccin-mocha-dark),
+starship,
+fish,
+kitty,
+hy3 plugin for hyprland,
+MonoLisa nerd font
