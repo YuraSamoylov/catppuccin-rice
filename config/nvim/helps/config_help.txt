@@ -1,0 +1,25 @@
+Editor configuration help:
+
+
+init.lua - this is basic file with all basics sources
+
+lua/ - in this directory all configuration
+
+lua/config/options.lua - editor options
+
+lua/config/mappings.lua - source editor maps
+
+lua/config/mappings/ - all editor maps
+
+lua/config/autocommands.lua - all autocommands
+
+lua/config/colorscheme.lua - current colorscheme
+
+
+lua/config/highlight.lua - editor highlights
+
+lua/config/plugins.lua - source Lazy plugin manager
+
+lua/plugins/ - all plugins are in this directory
+
+lua/scripts/ - custom lua scripts

@@ -1,0 +1,111 @@
+@import "mocha.css"; 
+
+* {
+    /* font-family: "MesloLGS Nerd Font Mono Bold"; */
+	font-family: "MonoLisa";
+    font-size: 14px;
+    font-weight: bold;
+	border: none;
+	border-radius: 0;
+	min-height: 14px;
+	margin-left: 2px;
+	/* margin-left: 5px; */
+	/* margin-right: 5px; */
+}
+
+window#waybar {
+    background: rgba(69, 71, 90, 0.0);
+    background-color: rgba(69, 71, 90, 0.0);
+    color: @overlay0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+#window {
+	background: transparent;
+}
+
+#workspaces {
+	margin-top: 3px;
+	margin-left: 4px;
+	margin-bottom: 0;
+	border: solid 1px @mauve;
+	border-radius: 10px;
+	background: rgba(40, 42, 54, 0.9);
+	transition: none;
+}
+
+#workspaces button {
+    transition: none;
+	color: @overlay0;
+	background: transparent;
+	font-size: 16px;
+}
+
+#workspaces button.focused {
+    
+}
+
+#workspaces button.active {
+    color: #f8f8f2;
+}
+
+#workspaces button.urgent {
+    color: @mauve;
+}
+
+#network,
+#pulseaudio,
+#language,
+#custom-launcher,
+#custom-power,
+#custom-bluetooth,
+#custom-settings,
+#clock {
+    margin-top: 3px;
+	margin-left: 4px;
+	margin-right: 2px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border: solid 1px @mauve;
+	border-radius: 10px;
+	transition: none;
+	color: #f8f8f2;
+	background: rgba(40, 42, 54, 0.9);
+}
+
+#tray {
+	background: rgba(40, 42, 54, 0.9);
+	border: solid 1px @mauve;
+	border-radius: 10px;
+    margin-top: 3px;
+	margin-left: 4px;
+	margin-right: 2px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+}
+
+#language {
+	margin-right: 8;
+}
+
+#idle_inhibitor {
+    margin-right: 12px;
+    color: #7cb342;
+}
+
+#idle_inhibitor.activated {
+    color: @red;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}

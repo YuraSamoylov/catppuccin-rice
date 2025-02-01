@@ -1,0 +1,20 @@
+#!/bin/env bash
+
+function run()
+{
+    if [[ "$1" == "cpp" ]]; then
+        filename=$(echo $2 | cut -d\. -f1)
+        g++ $2 -o $filename && ./$filename "${@:3}"
+    elif [[ "$1" == "c" ]]; then
+        filename=$(echo $2 | cut -d\. -f1)
+        gcc $2 -o $filename && ./$filename "${@:3}"
+    elif [[ "$1" == "gtk_c" ]]; then
+        filename=$(echo $2 | cut -d\. -f1)
+        gcc $2 `pkg-config --cflags --libs gtk+-3.0` -o $filename && ./$filename "${@:3}"
+    elif [[ "$1" == "py" ]]; then
+        python3 $2 "${@:3}"
+    elif [[ "$1" == "sh" ]]; then
+        bash $2 "${@:3}"
+    fi
+}
+run $*

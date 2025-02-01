@@ -1,0 +1,22 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "extensions",
+        "handle_selection",
+        "local",
+        "for"
+    ],
+    "diagnostics.disable": [
+        "duplicate-index",
+        "undefined-doc-name",
+        "unused-local",
+        "unused-function",
+        "missing-fields",
+        "trailing-space",
+        "deprecated",
+        "assign-type-mismatch",
+        "undefined-global",
+        "undefined-doc-param"
+    ],
+    "completion.autoRequire": false
+}

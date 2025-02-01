@@ -1,0 +1,50 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$time\
+$directory\
+\n $character
+"""
+right_format = """
+$python\
+$git_branch
+"""
+
+[character]
+success_symbol = "[](bold fg:#89b4fa)"
+error_symbol = "[](bold fg:#f38ba8)"
+vicmd_symbol = "[](bold fg:#89b4fa)"
+
+[directory]
+style = "bold fg:#89b4fa"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+# "~" = " "
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+".config" = ""
+
+[python]
+symbol = "🐍 "
+style = "bold fg:#cba6f7"
+pyenv_version_name = true
+
+[git_branch]
+symbol = ""
+style = "fg:#cba6f7"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:#cba6f7"
+format = '[$all_status$ahead_behind ]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "fg:#f9e2af"
+format = '[  $time ]($style)'

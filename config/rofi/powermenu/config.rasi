@@ -1,0 +1,10 @@
+configuration{
+    terminal: "kitty";
+	prompt: "";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+}
+
+@theme "catppuccin-mocha"

@@ -1,0 +1,76 @@
+{
+  // "position": "top",
+  "modules-left": ["custom/launcher", "custom/power", /*"custom/settings",*/ "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [/*"tray",*/ "network", "custom/bluetooth", "pulseaudio", "hyprland/language"],
+  "clock": {
+    "format": "<span>  </span>{:%H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	"calendar": {
+        "mode"          : "month",
+        "mode-mon-col"  : 3,
+        "weeks-pos"     : "right",
+        "on-scroll"     : 1,
+        "format": {
+            "months":     "<span color='#cdd6f4'><b>{}</b></span>",
+            "days":       "<span color='#cdd6f4'><b>{}</b></span>",
+            "weeks":      "<span color='#f5c2e7'><b>W{}</b></span>",
+            "weekdays":   "<span color='#f5c2e7'><b>{}</b></span>",
+            "today":      "<span color='#eba0ac'><b><u>{}</u></b></span>"
+        }
+    },
+    "actions":  {
+        "on-click-right": "mode",
+        "on-click-forward": "tz_up",
+        "on-click-backward": "tz_down",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+    }
+
+  },
+  "tray": {
+        "icon-size": 13,
+        "tooltip": false,
+        "spacing": 10
+    },
+  "network": {
+    "format-wifi": "<span size='13000'> </span>",
+    "format-ethernet": "<span size='13000'>󰤭  </span> Disconnected",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='13000'>  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+    "on-click": "~/.config/waybar/scripts/wifi_menu.sh"
+  },
+  "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "",
+      "format-icons": {
+          "default": ["", "", " "]
+      },
+      // "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	  "on-click": "pavucontrol &"
+  },
+  "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
+  },
+  "custom/bluetooth": {
+        "format": "󰂰 ",
+        // "on-click": "~/.config/waybar/scripts/bluetooth_menu.sh"
+        "on-click": "blueman-manager"
+  },
+  "custom/settings": {
+		"format": " ",
+		"on-click": "~/.config/waybar/scripts/settings/settings.sh"
+  },
+  "custom/power":{
+        "format": " ",
+        "on-click": "~/.config/waybar/scripts/power_menu.sh",
+		"escape": true,
+		"tooltip": false
+  },
+  "hyprland/language": {
+    "format": " {short}" // 
+  }
+}

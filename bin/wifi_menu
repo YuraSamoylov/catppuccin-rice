@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Получаем список доступных сетей
+networks=$(nmcli -t -f ssid,security dev wifi)
+
+# Используем rofi для выбора сети
+selected=$(echo "$networks" | rofi -dmenu -i -p "Выберите Wi-Fi сеть:")
+
+# Если выбрана сеть, подключаемся к ней
+if [ -n "$selected" ]; then
+    ssid=$(echo "$selected" | cut -d':' -f1)
+    password=$(rofi -dmenu -password -p "Введите пароль для $ssid:")
+    
+    nmcli dev wifi connect "$ssid" password "$password"
+fi

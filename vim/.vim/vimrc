@@ -1,0 +1,7 @@
+let folder_path = $HOME . '/.config/vim/config/'
+
+let files = split(glob(folder_path . '*'), '\n')
+
+for file in files
+	execute 'source' file
+endfor

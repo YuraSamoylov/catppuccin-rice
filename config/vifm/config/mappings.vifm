@@ -1,0 +1,50 @@
+" My basics maps
+map <c-q> :q<cr>
+map q :q<cr>
+map - :cd ..<cr>
+map <c-t> :tabnew<cr>
+map <s-tab> :tabnext<cr>
+
+" Like in vim
+map a :touch<space>
+map A :mkdir<space>
+map r :rename<space>
+map h :cd ..<cr>
+map <Left> :cd ..<cr>
+map l <cr>
+map <Right> <cr>
+
+" Standard functional keys
+map <f3> :!gvim -R %f &<cr>
+map <f4> :!gvim %f &<cr>
+map <f5> Y<tab>p<tab>
+map <f6> Y<tab>P<tab>
+map <s-f6> cw
+map <f7> :mkdir<space> ""<left>
+map <f8> dd
+map <s-f8> DD
+map <delete> dd
+map <f9> :shell<cr>
+
+" Select and go to next file
+map <space> tj
+
+" Show bookmarks
+map <c-\> :bmarks<cr>
+
+" Select all
+map * ggVG<cr>
+
+" Go to parent directory
+map <bs> gh
+
+" Set directory from other panel
+map <c-s> :cd %D<cr>
+
+" New tab
+map <c-t> :tabnew<cr>
+
+" Close tab
+map <c-w> :tabclose<cr>
+
+map <c-l> :cd ""<left>

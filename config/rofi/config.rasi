@@ -1,0 +1,15 @@
+configuration{
+    modi: "run,window,drun";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-run: " 🏃  Run ";
+    display-drun: "🔍 Application";
+    display-window: " 🪟  Window";
+    sidebar-mode: true;
+}
+
+@theme "catppuccin-mocha"

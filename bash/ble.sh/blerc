@@ -1,0 +1,12 @@
+# Disable EOF marker like "[ble: EOF]"
+bleopt prompt_eol_mark=''
+
+bleopt exec_errexit_mark=
+
+bleopt exec_elapsed_mark=
+
+bleopt exec_exit_mark=
+
+# Disable some other markers like "[ble: ...]"
+bleopt edit_marker=
+bleopt edit_marker_error=

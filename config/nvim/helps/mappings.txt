@@ -1,0 +1,74 @@
+leader map is space.
+
+
+
+
+NORMAL MODE:
+
+leader+s - outline symbols
+
+leader+x - diagnostics
+
+leader+f - find file in current directory
+
+leader+r - find recently opened files
+
+leader+g - find with word you type in prompt in files
+
+leader+n/ctrl+n - open neotree
+
+leader+a - availeble code actions
+
+leader+t - open float terminal
+
+leader+ws - save session for current directory
+
+leader+wr - restore session for current directory
+
+ctrl+t - new tab
+
+alt+s - new horizontal split
+
+alt+v - new vertical split
+
+ctrl+(h,j,k,l) - switch between splits
+
+tab/shift+tab - switch between tabs
+
+ctrl+e/tg - tag bar toogle
+
+ctrl+c - availeble colorschemes
+
+ctrl+s - save current file
+
+ctrl+q - save and quit
+
+alt+q - quit without saving
+
+ctrl+k - keymaps help
+
+ctrl+a - find and replace
+
+mv - make view
+
+lv - load view
+
+alt+t - open terminal in bottom split
+
++ - new file
+
+- - if your cursor in word true or false it this map will switch between them
+
+gd or \ - go to definition
+
+K - buffer hover
+
+F1 - help menu
+
+F2 - colorschemes switcher
+
+
+
+INSERT MODE:
+
+jk or kj or jh - quit from insert mode

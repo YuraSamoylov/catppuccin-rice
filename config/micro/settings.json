@@ -1,0 +1,10 @@
+{
+    "basename": true,
+    "colorscheme": "catppuccin",
+    "eofnewline": false,
+    "multiopen": "vsplit",
+	"transparent": true,
+	"hlsearch": true,
+	"backup": false,
+    "savecursor": true
+}
