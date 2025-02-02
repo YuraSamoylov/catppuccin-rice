@@ -25,4 +25,6 @@ MonoLisa nerd font,
 cmus and cava for music,
 rofi-wayland and wofi for menus,
 ble.sh for bash autocompletions,
+in firefox I use catppuccin-mocha theme and userstyles via stylus. For tabs
+newtab extention.
 also I use tokyo-night, catppuccin and austronaut themes for sddm
